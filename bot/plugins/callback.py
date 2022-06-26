@@ -52,7 +52,7 @@ async def cb_navg(bot, update: CallbackQuery):
         VERIFY[str(chat_id)] = admin_list
     
     if not ((user_id == ruser_id) or (user_id in admin_list)): # Checks if user is same as requested user or is admin
-        await update.answer("Nice Try ;)",show_alert=True)
+        await update.answer("ആരാന്റെ മൊതൽ മോഷ്ടിക്കല്ലഡേയ്🥴 ;)",show_alert=True)
         return
 
 
@@ -1601,14 +1601,12 @@ async def cb_about(bot, update: CallbackQuery):
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
     text+=f"\n<b><i>Bot Funtion:</i></b> <i>Auto Filter Files</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/CrazyBotszGrp">@CrazyBotszGrp</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/CrazyBotsz/Adv-Filter-Bot-V2">Source</a>"""
 
     buttons = [
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/AlbertEinstein_TG"
+                    "My Dev ⚡", url="https://t.me/Guardnangel"
                 ),
                 
             InlineKeyboardButton
@@ -1639,10 +1637,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Filter-Bot-V2')
+            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/Guardnangel'),
+            InlineKeyboardButton('Source Code 🧾', url ='https://t.me/oomfii')
         ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+            InlineKeyboardButton('Support 🛠', url='https://t.me/askmoviies')
         ],[
             InlineKeyboardButton('Help ⚙', callback_data="help")
         ]]
