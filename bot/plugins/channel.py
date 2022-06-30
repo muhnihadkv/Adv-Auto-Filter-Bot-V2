@@ -137,7 +137,7 @@ async def connect(bot: Bot, update):
                     else:
                         return
                     
-                    for i in ["_", "|", "-", ".", "@", "Dubbed", "Dub", "New", "Movie", "Film", "Movies", "Films", "dubbed", "dub", "new", "movie", "film", "movies", "films" ,"cinema", "Cinema", "720p", "480p", "1080p", "HD", "hd", "Hd", "2", "3", "4", "0", "1", "5", "6", "7", "8", "9"]: # Work Around
+                    for i in ["_", "|", "-", ".", "@", "Dubbed", "Dub", "New", "Movie", "Film", "Movies", "Films", "dubbed", "dub", "new", "movie", "film", "movies", "films" ,"cinema", "Cinema", "720p", "480p", "1080p", "HD", "hd", "Hd"]: # Work Around
                         try:
                             file_name = file_name.replace(i, " ")
                             file_name = file_name.replace("malayalam", "Mala¥alam")
@@ -152,8 +152,8 @@ async def connect(bot: Bot, update):
                             file_name = file_name.replace("ENGLISH", "Engli$h")
                             file_name = file_name.replace("English", "Engli$h")
                             file_name = file_name.replace("english", "Engli$h")
-                            file_name = file_name.replace("Telugu", "Te|ugu")
-                            file_name = file_name.replace("Kannada", "Kann@da")
+                            file_name = file_name.replace("Telugu", "T€LUGU")
+                            file_name = file_name.replace("Kannada", "Kaππada")
                         except Exception:
                             pass
                     
@@ -321,7 +321,7 @@ async def new_files(bot: Bot, update):
             file_caption  = update.caption if update.caption else ""
             file_size = update.document.file_size
 
-        for i in ["_", "|", "-", ".", "@", "Dubbed", "Dub", "New", "Movie", "Film", "Movies", "Films", "dubbed", "dub", "new", "movie", "film", "movies", "films" ,"cinema", "Cinema", "720p", "480p", "1080p", "HD", "hd", "Hd", "2", "3", "4", "0", "1", "5", "6", "7", "8", "9"]: # Work Around
+        for i in ["_", "|", "-", ".", "@", "Dubbed", "Dub", "New", "Movie", "Film", "Movies", "Films", "dubbed", "dub", "new", "movie", "film", "movies", "films" ,"cinema", "Cinema", "720p", "480p", "1080p", "HD", "hd", "Hd"]: # Work Around
             try:
                 file_name = file_name.replace(i, " ")
                 file_name = file_name.replace("malayalam", "Mala¥alam")
@@ -336,8 +336,8 @@ async def new_files(bot: Bot, update):
                 file_name = file_name.replace("ENGLISH", "Engli$h")
                 file_name = file_name.replace("English", "Engli$h")
                 file_name = file_name.replace("english", "Engli$h")
-                file_name = file_name.replace("Telugu", "Te|ugu")
-                file_name = file_name.replace("Kannada", "Kann@da")
+                file_name = file_name.replace("Telugu", "T€LUGU")
+                file_name = file_name.replace("Kannada", "Kaππada")
             except Exception:
                 pass
     except Exception as e:
